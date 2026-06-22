@@ -1,0 +1,190 @@
+export interface BlogPost {
+  slug: string;
+  image: string;
+  category: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  readTime: string;
+  content: string[];
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "photography-tips-sell-faster",
+    image: "/images/703564895_17913191769393261_7331560962352217871_n.jpg",
+    category: "Photography Tips",
+    title: "10 Photography Tips That Make Properties Sell Faster",
+    excerpt:
+      "Small adjustments in lighting, angles, and staging can transform a listing from overlooked to irresistible. Here are the techniques top agents swear by.",
+    date: "June 2026",
+    author: "ShootYourListing Team",
+    readTime: "5 min read",
+    content: [
+      "In today's competitive real estate market, the quality of your property photography can make or break a sale. Buyers scroll through hundreds of listings daily, and you have roughly 3 seconds to capture their attention. Here are 10 proven photography tips that will make your properties stand out and sell faster.",
+      "**1. Shoot During the Golden Hour**",
+      "The hour after sunrise and before sunset provides the most flattering natural light. Warm, directional light adds depth and warmth to both interior and exterior shots. Avoid midday photography when harsh overhead shadows make spaces look flat and uninviting.",
+      "**2. Use a Wide-Angle Lens**",
+      "Wide-angle lenses (16-24mm) capture the full scope of a room without making it look artificially enlarged. They help buyers understand the layout and flow of a space. Just be careful not to go too wide — ultra-wide lenses can distort proportions and create unrealistic expectations.",
+      "**3. Declutter and Depersonalize**",
+      "Remove personal items, excessive furniture, and visual clutter before every shoot. Buyers need to envision themselves living in the space. A clean, minimal canvas allows the architecture and natural features to shine through.",
+      "**4. Master the Two-Flash Technique**",
+      "Place one flash in the main room pointing at the ceiling for even ambient light, and a second flash in adjacent rooms. This eliminates dark corners and creates a natural, balanced exposure throughout the property.",
+      "**5. Shoot from Corner Angles**",
+      "Positioning your camera in the corner of a room captures the maximum floor space and gives buyers a comprehensive view. This angle also helps avoid the \"straight-on\" look that makes photos feel flat.",
+      "**6. Pay Attention to Vertical Lines**",
+      "Keep your camera level and vertical lines straight. Tilted photos look unprofessional and can make walls appear to lean. Use a tripod with a bubble level or enable the grid overlay on your camera.",
+      "**7. Edit with a Consistent Style**",
+      "Develop a signature editing style and apply it consistently across all your listings. Consistency builds brand recognition and gives your portfolio a polished, professional look.",
+      "**8. Highlight Key Features**",
+      "Every property has standout features — a fireplace, a view, custom cabinetry, or unique architecture. Identify these elements and compose your shots to emphasize them.",
+      "**9. Include Detail Shots**",
+      "Beyond wide room shots, capture close-up details: granite countertops, light fixtures, custom tile work, and architectural elements. These photos add variety and showcase craftsmanship.",
+      "**10. Invest in Professional Equipment**",
+      "A quality camera, sturdy tripod, external flash, and reliable editing software are essential investments. The cost of professional equipment pays for itself quickly through higher-quality deliverables and faster turnaround times.",
+
+      "By implementing these techniques consistently, you'll notice a significant improvement in how your listings perform online. Properties with professional photography receive 118% more views and sell 32% faster than those with amateur images.",
+    ],
+  },
+  {
+    slug: "drone-footage-luxury-listings",
+    image: "/images/719490942_17915921343393261_8167824527571734183_n.jpg",
+    category: "Drone Tech",
+    title: "Why Drone Footage Is No Longer Optional for Luxury Listings",
+    excerpt:
+      "Aerial perspectives reveal what ground-level shots cannot. Buyers expect cinematic context for high-value properties, and drone content delivers it.",
+    date: "June 2026",
+    author: "ShootYourListing Team",
+    readTime: "6 min read",
+    content: [
+      "The real estate industry has undergone a dramatic transformation in how properties are marketed. Among the most impactful innovations is drone photography and videography, which has moved from a luxury add-on to an absolute necessity — especially for high-end listings.",
+      "**The Shift in Buyer Expectations**",
+      "Today's buyers, particularly in the luxury segment, expect comprehensive visual content before they schedule a viewing. They want to understand not just the property itself, but its context — the neighborhood, proximity to amenities, surrounding landscapes, and overall setting. Drone footage provides this contextual storytelling in a way that ground-level photography simply cannot match.",
+      "**What Aerial Photography Reveals**",
+      "A well-captured aerial shot communicates the property's relationship to its environment. For beachfront villas, it shows the distance to the water. For urban properties, it reveals proximity to landmarks and transit. For estates and compounds, it captures the full scope of the grounds. This contextual information helps buyers make faster, more informed decisions.",
+      "**The ROI of Drone Content**",
+      "Studies consistently show that listings with aerial photography receive 68% more views than those without. In the luxury segment, where properties often compete at the highest price points, this difference in engagement translates directly to faster sales and higher offers.",
+      "**Cinematic Video Tours**",
+      "Beyond still photography, drone videography creates cinematic property tours that captivate buyers. Smooth flyover sequences, orbiting shots, and reveal transitions produce content that feels like a film rather than a listing. These videos perform exceptionally well on social media, generating organic reach and brand visibility.",
+      "**Regulatory Compliance**",
+      "Professional drone operators understand and comply with local aviation regulations. In Morocco, all drone operations are conducted in accordance with DGAC guidelines, ensuring that every flight is legal, safe, and properly permitted. This attention to compliance protects both the operator and the property owner.",
+      "**When to Use Drone vs. Ground**",
+      "The best property marketing strategies combine both perspectives. Use drone shots for exteriors, context, and overview. Use ground-level photography for interiors and details. Together, they create a complete visual narrative that guides buyers from first impression to final decision.",
+      "**The Future of Property Marketing**",
+      "As technology advances, we're seeing the emergence of 3D aerial mapping, thermal imaging for energy audits, and AI-enhanced post-processing. Properties that embrace these technologies today will have a significant competitive advantage in tomorrow's market.",
+    ],
+  },
+  {
+    slug: "virtual-tours-morocco-real-estate",
+    image: "/images/706483388_17913740655393261_8362131622452443406_n.jpg",
+    category: "Virtual Tours",
+    title: "The Rise of Virtual Tours in Moroccan Real Estate",
+    excerpt:
+      "Virtual walkthroughs are reshaping how buyers explore properties remotely. Discover why top agencies are investing heavily in immersive 3D experiences.",
+    date: "June 2026",
+    author: "ShootYourListing Team",
+    readTime: "5 min read",
+    content: [
+      "The Moroccan real estate market is experiencing a digital revolution, and at the forefront of this transformation is the rapid adoption of virtual tour technology. What was once considered a novelty has become an essential tool for property marketing.",
+      "**What Are Virtual Tours?**",
+      "Virtual tours are immersive, 360-degree walkthroughs of properties that allow potential buyers to explore every room from the comfort of their home. Using specialized cameras and software, photographers capture a complete representation of a space that users can navigate at their own pace.",
+      "**Why Morocco Is Embracing Virtual Tours**",
+      "Morocco's real estate market serves both domestic and international buyers. Virtual tours bridge the geographic gap, allowing overseas investors and diaspora communities to explore properties without traveling. This accessibility has expanded the buyer pool significantly.",
+      "**The Technology Behind Virtual Tours**",
+      "Modern virtual tours use Matterport or similar 3D scanning technology to create detailed digital twins of properties. These scans capture measurements, floor plans, and spatial relationships with remarkable accuracy, giving buyers genuine insight into the property's layout.",
+      "**Benefits for Agents and Developers**",
+      "For real estate professionals, virtual tours reduce wasted viewings by pre-qualifying interested buyers. Clients who schedule in-person visits after exploring a virtual tour are significantly more likely to make an offer, saving time for both parties.",
+      "**Integration with Property Listings**",
+      "The most effective property listings combine professional photography, drone footage, and virtual tours into a comprehensive visual package. This multi-format approach caters to different buyer preferences and provides maximum information at every stage of the decision-making process.",
+      "**Measuring Impact**",
+      "Properties with virtual tours receive 87% more views than those without. They also spend 31% less time on the market and generate 49% more qualified leads. These metrics demonstrate that virtual tours are not just a nice-to-have — they are a measurable competitive advantage.",
+    ],
+  },
+  {
+    slug: "stage-property-visual-impact",
+    image: "/images/722296424_17916515901393261_2147057843375880472_n.jpg",
+    category: "Marketing",
+    title: "How to Stage a Property for Maximum Visual Impact",
+    excerpt:
+      "Effective staging bridges the gap between a property and its buyer. Learn the principles that make interiors photograph beautifully and sell quickly.",
+    date: "June 2026",
+    author: "ShootYourListing Team",
+    readTime: "4 min read",
+    content: [
+      "Property staging is the art of preparing a space for sale by arranging furniture, decor, and accessories to highlight the property's best features. When done well, staging transforms empty or lived-in spaces into aspirational environments that resonate with buyers.",
+      "**Why Staging Matters**",
+      "Staged properties sell 73% faster and for 6-25% more than non-staged homes. The reason is simple: staged spaces help buyers visualize themselves living in the property. They create an emotional connection that raw, empty rooms rarely achieve.",
+      "**Start with a Clean Slate**",
+      "Before bringing in any staging elements, deep clean the entire property. Every surface should sparkle, every window should be spotless, and every room should smell fresh. Cleanliness signals maintenance and care, which builds buyer confidence.",
+      "**Focus on Key Rooms**",
+      "You don't need to stage every room. Focus on the spaces that matter most: the living room, master bedroom, kitchen, and bathrooms. These rooms have the greatest influence on buyer decisions and should receive the most attention.",
+      "**Neutral Color Palettes**",
+      "Use neutral colors for walls, furniture, and textiles. Beiges, whites, grays, and soft blues create a calm, inviting atmosphere that appeals to the widest audience. Bold colors can polarize buyers and distract from the property's architecture.",
+      "**Light Everything Up**",
+      "Good lighting is essential for both staging and photography. Open all curtains and blinds to maximize natural light. Add floor lamps and table lamps to dark corners. Replace any burned-out bulbs and consider upgrading to warm LED lighting.",
+      "**Add Life with Greenery**",
+      "Plants and flowers bring warmth and life to staged spaces. A vase of fresh flowers on the dining table, a potted plant in the living room, or a small herb garden in the kitchen all create a sense of home.",
+      "**The Photography Connection**",
+      "Staging and photography go hand in hand. A well-staged property photographs dramatically better than an unstaged one. The combination of thoughtful arrangement and professional lighting creates images that stop scrollers and generate inquiries.",
+    ],
+  },
+  {
+    slug: "golden-hour-photography-timing",
+    image: "/images/724045427_17917395714393261_3276041089295120952_n.jpg",
+    category: "Photography Tips",
+    title: "Golden Hour Photography: Timing Your Shoots Perfectly",
+    excerpt:
+      "The hour after sunrise and before sunset offers unmatched warmth and depth. Mastering golden hour scheduling can elevate your property imagery.",
+    date: "June 2026",
+    author: "ShootYourListing Team",
+    readTime: "4 min read",
+    content: [
+      "Golden hour — the period shortly after sunrise and before sunset — is widely regarded as the best time for outdoor photography. The warm, directional light creates dramatic shadows and a golden glow that transforms even ordinary scenes into extraordinary images.",
+      "**Understanding Golden Hour**",
+      "During golden hour, the sun sits low on the horizon, producing light that is softer, warmer, and more directional than midday sun. This light reduces harsh shadows, minimizes contrast, and adds a natural warmth that makes properties look inviting and aspirational.",
+      "**Why It Matters for Real Estate**",
+      "For real estate photography, golden hour is particularly valuable for exterior shots. Properties photographed during this time appear more luxurious and appealing. The warm light enhances architectural details, makes landscaping look lush, and creates a sense of place that resonates with buyers.",
+      "**Planning Your Shoot Schedule**",
+      "Check sunrise and sunset times for your location and plan accordingly. Arrive at least 30 minutes before golden hour begins to set up equipment and scout the best angles. The most dramatic light typically occurs in the first and last 20 minutes of golden hour.",
+      "**Interior Considerations**",
+      "Golden hour also benefits interior photography. The warm, directional light streaming through windows creates beautiful highlights and shadows that add depth to room shots. Position your camera to capture this light, and use it as a key design element in your compositions.",
+      "**Balancing Interior and Exterior**",
+      "One challenge of golden hour shooting is balancing bright exterior light with darker interiors. Use supplemental flash or HDR bracketing to ensure both the view through windows and the interior details are properly exposed.",
+      "**Blue Hour as an Alternative**",
+      "If golden hour timing doesn't work for your schedule, consider blue hour — the period just before sunrise or after sunset. The cool, even light of blue hour creates a different mood but can produce equally stunning results, particularly for properties with prominent exterior lighting.",
+    ],
+  },
+  {
+    slug: "professional-visuals-listing-to-sold",
+    image: "/images/720675578_17916356172393261_7436296106074224862_n.jpg",
+    category: "Industry News",
+    title: "From Listing to Sold: The Power of Professional Visuals",
+    excerpt:
+      "Properties with professional photography sell faster and at higher prices. The data is clear — visual content is the single biggest factor in buyer engagement.",
+    date: "June 2026",
+    author: "ShootYourListing Team",
+    readTime: "6 min read",
+    content: [
+      "In the digital age, a property's first showing happens online. Before a buyer ever steps through the door, they've already formed an impression based on the photos in the listing. This makes professional visual content the single most important factor in selling a property quickly and at the best price.",
+      "**The Data Speaks**",
+      "According to the National Association of Realtors, 97% of home buyers start their search online. Listings with professional photography receive 118% more views than those with amateur images. Properties listed with professional photos sell 32% faster and for higher prices.",
+      "**Beyond Photography**",
+      "Today's property marketing goes beyond single photos. A comprehensive visual package includes interior photography, exterior shots, drone aerials, virtual tours, and video walkthroughs. Each format serves a specific purpose in the buyer's decision-making journey.",
+      "**The Psychology of Visual Content**",
+      "Humans process images 60,000 times faster than text. High-quality images trigger emotional responses that text descriptions cannot replicate. When buyers see beautiful photos, they begin to imagine themselves in the space — and that emotional connection drives action.",
+      "**Social Media Amplification**",
+      "Professional visual content performs exponentially better on social media platforms. Instagram, Facebook, and YouTube all prioritize visual content, meaning professionally photographed properties get more organic reach, more engagement, and more inquiries.",
+      "**The Cost of Cutting Corners**",
+      "Some agents attempt to save money by using smartphone photos or hiring amateur photographers. The data shows this approach actually costs more in the long run. Properties with poor photos sit on the market longer, require price reductions, and ultimately sell for less than professionally marketed properties.",
+      "**Building a Brand Through Quality**",
+      "Consistent use of professional visual content builds brand reputation. When every listing looks exceptional, agents and developers establish themselves as premium providers. This reputation attracts higher-value clients and better properties, creating a virtuous cycle of quality and success.",
+      "**Investing in Your Success**",
+      "Professional photography and videography are not expenses — they are investments with measurable returns. The modest cost of a professional shoot is quickly recouped through faster sales, higher prices, and a stronger brand presence in the market.",
+    ],
+  },
+];
+
+export function getBlogPost(slug: string): BlogPost | undefined {
+  return blogPosts.find((post) => post.slug === slug);
+}
