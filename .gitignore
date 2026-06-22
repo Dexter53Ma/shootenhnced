@@ -49,8 +49,8 @@ next-env.d.ts
 # player scripts from ytdl debugging
 *-player-script.js
 
-# screenshots
-*.png
+# screenshots (root only, not public/)
+/*.png
 
 # docs
 docs/
