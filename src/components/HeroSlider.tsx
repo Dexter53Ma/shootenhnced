@@ -33,46 +33,38 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <section
-      className="relative w-full overflow-hidden"
-      style={{ minHeight: "min(600px, 100vh)", height: "100vh" }}
-    >
-      {/* YouTube iframe — z-index:0, pointer-events blocked */}
-      <iframe
-        src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&modestbranding=1&showinfo=0&rel=0&playsinline=1&disablekb=1&iv_load_policy=3&fs=0`}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-        style={{
-          width: "177.78vh",
-          minWidth: "100vw",
-          minHeight: "56.25vw",
-          height: "100vh",
-          border: "none",
-          pointerEvents: "none",
-          zIndex: 0,
-        }}
-        allow="autoplay; encrypted-media"
-        allowFullScreen={false}
-        sandbox="allow-scripts allow-same-origin"
-        title="Luxury villa cinematic video"
-      />
+    <section className="relative w-full h-screen overflow-hidden bg-black">
+      <div className="absolute inset-0 overflow-hidden">
+        <iframe
+          src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&modestbranding=1&showinfo=0&rel=0&playsinline=1&disablekb=1&iv_load_policy=3&fs=0&cc_load_policy=0&autohide=1&title=0&portrait=0`}
+          allow="autoplay; encrypted-media"
+          allowFullScreen={false}
+          title="Luxury villa cinematic video"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            width: "177.78vh",
+            minWidth: "100vw",
+            height: "100vh",
+            minHeight: "56.25vw",
+            transform: "translate(-50%, -50%)",
+            border: "none",
+            pointerEvents: "none",
+            zIndex: 0,
+          }}
+        />
+      </div>
 
-      {/* Solid overlay — physically covers the iframe so mouse never reaches it */}
+      {/* Gradient overlay for text readability */}
       <div
         className="absolute inset-0"
         style={{
           zIndex: 1,
           background:
-            "linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 15%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 85%, rgba(8,44,56,0.95) 100%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.3) 85%, rgba(8,44,56,0.9) 100%)",
+          pointerEvents: "none",
         }}
-      />
-      {/* Extra opaque bars to hide YouTube top/bottom UI */}
-      <div
-        className="absolute left-0 right-0 top-0 h-16"
-        style={{ zIndex: 1, background: "rgba(0,0,0,0.85)" }}
-      />
-      <div
-        className="absolute bottom-0 left-0 right-0 h-20"
-        style={{ zIndex: 1, background: "rgba(8,44,56,0.95)" }}
       />
 
       <motion.div
