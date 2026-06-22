@@ -1,16 +1,30 @@
 {
-  "name": "desktop",
+  "name": "shootyourlisting",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "@distube/ytdl-core": "^4.16.12"
+    "@base-ui/react": "^1.6.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.40.0",
+    "lucide-react": "^1.21.0",
+    "next": "^16.2.9",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.3.1",
+    "postcss": "^8.5.15",
+    "typescript": "^5.8.0",
+    "@types/react": "^19.0.0",
+    "@types/node": "^22.0.0"
   }
 }
