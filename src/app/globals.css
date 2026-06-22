@@ -270,3 +270,21 @@ html {
 .delay-300 { animation-delay: 300ms; }
 .delay-400 { animation-delay: 400ms; }
 .delay-500 { animation-delay: 500ms; }
+
+/* Hide YouTube branding in hero iframe */
+.hero-video-container iframe {
+  pointer-events: none;
+}
+
+.hero-video-container .ytp-chrome-top,
+.hero-video-container .ytp-chrome-bottom,
+.hero-video-container .ytp-gradient-top,
+.hero-video-container .ytp-gradient-bottom,
+.hero-video-container .ytp-pause-overlay,
+.hero-video-container .ytp-watermark,
+.hero-video-container .ytp-show-cards-title,
+.hero-video-container .ytp-ce-element {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}

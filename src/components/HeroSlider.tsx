@@ -17,10 +17,10 @@ const taglines = [
 ];
 
 const INTERVAL = 5000;
+const VIDEO_ID = "h64HW1hbyyk";
 
 export default function HeroSlider() {
   const [current, setCurrent] = useState(0);
-  const videoRef = useRef<HTMLVideoElement>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -37,24 +37,30 @@ export default function HeroSlider() {
       className="relative w-full overflow-hidden"
       style={{ minHeight: "min(600px, 100vh)", height: "100vh" }}
     >
-      <video
-        ref={videoRef}
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="auto"
-        className="absolute inset-0 h-full w-full object-cover"
-        poster="/images/645772234_17900176197393261_5522100353769301722_n.jpg"
-      >
-        <source src="/video/hero.mp4" type="video/mp4" />
-      </video>
+      {/* YouTube iframe as background — all controls/branding hidden via URL params + CSS */}
+      <div className="hero-video-container absolute inset-0 h-full w-full overflow-hidden">
+        <iframe
+          src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&modestbranding=1&showinfo=0&rel=0&playsinline=1&disablekb=1&iv_load_policy=3&fs=0&origin=${typeof window !== "undefined" ? window.location.origin : ""}`}
+          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          style={{
+            width: "177.78vh",
+            minWidth: "100vw",
+            minHeight: "56.25vw",
+            height: "100vh",
+            border: "none",
+          }}
+          allow="autoplay; encrypted-media"
+          allowFullScreen={false}
+          title=""
+        />
+      </div>
 
+      {/* Dark overlay to hide any remaining YouTube UI elements */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 z-[1]"
         style={{
           background:
-            "linear-gradient(148deg, rgba(0,0,0,0) 61%, rgba(8,44,56,0.7) 93%)",
+            "linear-gradient(148deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 61%, rgba(8,44,56,0.8) 93%)",
         }}
       />
 
