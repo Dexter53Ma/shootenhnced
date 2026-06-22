@@ -37,30 +37,31 @@ export default function HeroSlider() {
       className="relative w-full overflow-hidden"
       style={{ minHeight: "min(600px, 100vh)", height: "100vh" }}
     >
-      {/* YouTube iframe as background — all controls/branding hidden via URL params + CSS */}
-      <div className="hero-video-container absolute inset-0 h-full w-full overflow-hidden">
-        <iframe
-          src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&modestbranding=1&showinfo=0&rel=0&playsinline=1&disablekb=1&iv_load_policy=3&fs=0&origin=${typeof window !== "undefined" ? window.location.origin : ""}`}
-          className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          style={{
-            width: "177.78vh",
-            minWidth: "100vw",
-            minHeight: "56.25vw",
-            height: "100vh",
-            border: "none",
-          }}
-          allow="autoplay; encrypted-media"
-          allowFullScreen={false}
-          title=""
-        />
-      </div>
-
-      {/* Dark overlay to hide any remaining YouTube UI elements */}
-      <div
-        className="absolute inset-0 z-[1]"
+      {/* YouTube iframe — z-index:0, pointer-events blocked */}
+      <iframe
+        src={`https://www.youtube.com/embed/${VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${VIDEO_ID}&controls=0&modestbranding=1&showinfo=0&rel=0&playsinline=1&disablekb=1&iv_load_policy=3&fs=0`}
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         style={{
+          width: "177.78vh",
+          minWidth: "100vw",
+          minHeight: "56.25vw",
+          height: "100vh",
+          border: "none",
+          pointerEvents: "none",
+          zIndex: 0,
+        }}
+        allow="autoplay; encrypted-media"
+        allowFullScreen={false}
+        title=""
+      />
+
+      {/* Solid overlay — physically covers the iframe so mouse never reaches it */}
+      <div
+        className="absolute inset-0"
+        style={{
+          zIndex: 1,
           background:
-            "linear-gradient(148deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.15) 61%, rgba(8,44,56,0.8) 93%)",
+            "linear-gradient(148deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.25) 61%, rgba(8,44,56,0.85) 93%)",
         }}
       />
 
@@ -68,7 +69,8 @@ export default function HeroSlider() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className="absolute z-10 bottom-20 left-5 md:bottom-36 md:left-[72px]"
+        className="absolute bottom-20 left-5 md:bottom-36 md:left-[72px]"
+        style={{ zIndex: 2 }}
       >
         <AnimatePresence mode="wait">
           <motion.p
@@ -92,7 +94,8 @@ export default function HeroSlider() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.5 }}
-        className="absolute z-10 flex gap-2 bottom-5 left-1/2 -translate-x-1/2"
+        className="absolute bottom-5 left-1/2 flex -translate-x-1/2 gap-2"
+        style={{ zIndex: 2 }}
       >
         {taglines.map((_, i) => (
           <button
