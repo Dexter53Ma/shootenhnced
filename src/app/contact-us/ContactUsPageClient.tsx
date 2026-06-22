@@ -86,8 +86,8 @@ export default function ContactUsPageClient() {
     ) {
       return;
     }
-    const msg = `*New Contact Enquiry*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Enquiry Type:* ${formData.enquiryType}%0A*Subject:* ${formData.subject}%0A*Message:* ${formData.message}`;
-    window.open(`https://wa.me/212621189496?text=${msg}`, "_blank");
+    const msg = `*New Contact Enquiry*%0A%0A*Name:* ${encodeURIComponent(formData.name)}%0A*Phone:* ${encodeURIComponent(formData.phone)}%0A*Email:* ${encodeURIComponent(formData.email)}%0A*Enquiry Type:* ${encodeURIComponent(formData.enquiryType)}%0A*Subject:* ${encodeURIComponent(formData.subject)}%0A*Message:* ${encodeURIComponent(formData.message)}`;
+    window.open(`https://wa.me/212621189496?text=${msg}`, "_blank", "noopener,noreferrer");
     setSubmitted(true);
     setError(false);
   };
@@ -158,7 +158,7 @@ export default function ContactUsPageClient() {
                   bookings@shootyourlisting.com
                 </a>
                 <a
-                  href="tel:+212600000000"
+                  href="tel:+212621189496"
                   className="font-manrope text-[14px] font-light text-[#222a2c] transition-colors hover:text-[#648992]"
                 >
                   +212 6 21 18 94 96
@@ -171,6 +171,17 @@ export default function ContactUsPageClient() {
                 </p>
                 <p className="font-manrope text-[14px] font-light leading-[22px] text-[#222a2c]">
                   Office 1204, Media Hub Tower, Casablanca, Morocco
+                </p>
+              </div>
+
+              <div>
+                <p className="mb-1 font-manrope text-[12px] font-semibold uppercase tracking-[1px] text-[#3d4a4d]">
+                  Business Hours
+                </p>
+                <p className="font-manrope text-[14px] font-light leading-[22px] text-[#222a2c]">
+                  Monday – Saturday: 8:00 AM – 8:00 PM<br />
+                  Sunday: Closed<br />
+                  Morocco Time (GMT+1)
                 </p>
               </div>
             </div>

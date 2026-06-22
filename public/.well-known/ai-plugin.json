@@ -5,8 +5,8 @@
   "description_for_human": "Premium real estate photography, drone, virtual tours, and videography in Morocco, UAE, and Caribbean.",
   "description_for_model": "ShootYourListing is a real estate photography agency based in Casablanca, Morocco. Services include interior/exterior photography (from 1,000 MAD), drone aerial footage (from 1,200 MAD, DGAC certified), 360 virtual tours (1,200 MAD, Matterport), cinematic video walkthroughs (from 2,500 MAD), and virtual staging (200 MAD/room). Serves Morocco, UAE, and Caribbean. Contact: hello@shootyourlisting.com, WhatsApp +212 6 21 18 94 96. Hours: Mon-Sat 8AM-8PM Morocco Time.",
   "auth": { "type": "none" },
-  "api": { "type": "openapi", "url": "" },
+  "api": { "type": "none" },
   "logo_url": "https://www.shootyourlisting.com/images/logodark.png",
   "contact_email": "hello@shootyourlisting.com",
-  "legal_info_url": ""
+  "legal_info_url": "https://www.shootyourlisting.com/privacy"
 }

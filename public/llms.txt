@@ -2,50 +2,73 @@
 
 > Morocco's premier real estate photography, videography, drone, and virtual tour agency. We help properties sell faster and at higher prices by showcasing them in the most compelling way possible.
 
+## About
+
+ShootYourListing is a professional real estate visual content agency based in Casablanca, Morocco. We serve real estate agents, developers, and property brands across Morocco, UAE, and the Caribbean.
+
+- Founded: Morocco
+- Team: Professional photographers, drone pilots, editors
+- Email: hello@shootyourlisting.com
+- WhatsApp: +212 6 21 18 94 96
+- Hours: Mon-Sat 8AM-8PM Morocco Time (GMT+1)
+- Office: Office 1204, Media Hub Tower, Casablanca
+
 ## Services
 
-- Interior and exterior real estate photography
-- Drone and aerial photography and videography (DGAC compliant)
-- 360-degree virtual tours (Matterport 3D)
-- Cinematic video walkthroughs
-- Virtual staging
-- Event photography
-
-## Photography Packages
+### Photography
+Professional interior and exterior real estate photography with fast turnaround.
 
 - **Appartement** — 1,000 MAD: 20 high-res photos, interior shots, natural lighting, basic editing, 24h delivery, online gallery, commercial usage rights, social media formats
 - **Riads** (Most Popular) — 1,500 MAD: 30 high-res photos, traditional architecture focus, courtyard and interior shots, golden hour session, advanced editing, 12h express delivery
 - **Villa** — 2,000 MAD: 40 high-res photos, professional video tour (3-5 min), interior/exterior/garden, pool and outdoor, drone shots, premium editing, same-day delivery, virtual staging consultation, 3 months free storage
 - **Events** — 3,000-5,000 MAD: Full coverage (4-8 hours), multiple photographers, candid and posed, video highlights, drone footage, same-day preview, full gallery within 48h, USB included, 6 months free storage
 
+### Drone & Aerial Photography
+DGAC-certified drone operations for aerial property photography and videography.
+
+- **Essential** — 1,200 MAD: 15 aerial photos, FAA/DGAC compliant pilot, basic editing, 48h delivery, property boundary mapping, single property focus, digital gallery, social media formats, commercial usage rights, standard drone (DJI Mini)
+- **Premium** (Most Popular) — 1,800 MAD: 25 aerial photos + 2-min video, cinematic shots, twilight/golden hour, advanced editing, 24h express delivery, neighborhood context shots, virtual tour integration, dedicated pilot, DJI Air 3
+- **Luxury** — 3,000 MAD: 40+ photos + 5-min cinematic video, full property showcase, 3D mapping, same-day delivery, marketing-ready content package, priority scheduling, DJI Mavic 3, social media content, custom editing style
+- **Portfolio** — 5,000 MAD: Unlimited shots + 10-min video, multi-angle coverage, full post-production, premium editing, 4h express, dedicated account manager, all locations, priority for re-shoots, custom scheduling, all-inclusive package
+
+### Videography
+Cinematic video walkthroughs and real estate video production.
+
+- **Appartement** — 2,500 MAD: 2-3 min professional video, interior walkthrough, stabilizer/gimbal, licensed music, color grading, 72h delivery, social media cut, YouTube/Vimeo ready, 4K resolution
+- **Riads** (Most Popular) — 3,500 MAD: 3-5 min cinematic video, interior/exterior coverage, drone included, golden hour shots, advanced editing, 48h express, aerial transition shots, social media reel, virtual tour compatible
+- **Villa** — 5,000 MAD: 5-7 min premium video, full property tour, pool/garden coverage, twilight shots, professional editing, 24h delivery, drone integration, social media package, virtual staging compatible, 1-month free storage
+- **Events** — 8,000-12,000 MAD: Full event coverage (4-8 hours), multi-camera setup, highlight reel, full documentary, same-day preview, 1-week delivery, social media package, custom editing, USB delivery
+
+### Virtual Tours
+360-degree immersive Matterport virtual tours.
+
+- 1,200 MAD per tour
+- Matterport 3D scanning technology
+- Interactive floor plans
+- Compatible with MLS and Zillow
+- Embeddable on any website
+
+### Virtual Staging
+AI-powered virtual staging for empty properties.
+
+- 200 MAD per room
+- Transform empty rooms into beautifully staged spaces
+- Multiple style options
+- Fast turnaround
+
 ## Add-on Services
 
 - Additional photos (per 10): 300 MAD
 - Extra video content (per minute): 400 MAD
 - Same-day rush delivery: 500 MAD
-- Virtual staging (per room): 200 MAD
-- 360 virtual tour: 1,200 MAD
 - Social media content package: 600 MAD
-
-## Other Services
-
-- **Drone and Aerial Photography**: Starting at 1,200 MAD
-- **Videography**: Starting at 2,500 MAD
-- **Virtual Tours**: 360-degree immersive experiences
+- Property description writing: 400 MAD
 
 ## Coverage Areas
 
 **Morocco**: Casablanca, Marrakech, Tangier, Rabat, Agadir, Fez, Meknes, Chefchaouen, Essaouira, Kenitra, Ouarzazate, Ifrane, and all regions.
 
 **International**: UAE, Caribbean
-
-## Contact
-
-- Email: hello@shootyourlisting.com
-- WhatsApp: +212 6 21 18 94 96
-- Phone: +212 6 21 18 94 96
-- Hours: Monday-Saturday, 8AM-8PM Morocco Time (GMT+1)
-- Office: Office 1204, Media Hub Tower, Casablanca, Morocco
 
 ## Key Facts
 
@@ -59,3 +82,8 @@
 
 - https://www.shootyourlisting.com/blog
 - Photography tips, drone insights, virtual tour guides, property staging advice
+
+## Legal
+
+- Privacy Policy: https://www.shootyourlisting.com/privacy
+- Terms & Conditions: https://www.shootyourlisting.com/terms

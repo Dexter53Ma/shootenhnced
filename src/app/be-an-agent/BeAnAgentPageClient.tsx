@@ -79,8 +79,8 @@ export default function BeAnAgentPageClient() {
   const [agencyName, setAgencyName] = useState("");
 
   const handleJoinNow = () => {
-    const msg = `*New Agent Registration*%0A%0A*Name:* ${agentName || "N/A"}%0A*Email:* ${agentEmail || "N/A"}%0A*Phone:* ${agentPhone || "N/A"}%0A*Agency:* ${agencyName || "N/A"}`;
-    window.open(`https://wa.me/212621189496?text=${msg}`, "_blank");
+    const msg = `*New Agent Registration*%0A%0A*Name:* ${encodeURIComponent(agentName || "N/A")}%0A*Email:* ${encodeURIComponent(agentEmail || "N/A")}%0A*Phone:* ${encodeURIComponent(agentPhone || "N/A")}%0A*Agency:* ${encodeURIComponent(agencyName || "N/A")}`;
+    window.open(`https://wa.me/212621189496?text=${msg}`, "_blank", "noopener,noreferrer");
   };
 
   useEffect(() => {

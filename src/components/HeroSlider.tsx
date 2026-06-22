@@ -52,7 +52,8 @@ export default function HeroSlider() {
         }}
         allow="autoplay; encrypted-media"
         allowFullScreen={false}
-        title=""
+        sandbox="allow-scripts allow-same-origin"
+        title="Luxury villa cinematic video"
       />
 
       {/* Solid overlay — physically covers the iframe so mouse never reaches it */}

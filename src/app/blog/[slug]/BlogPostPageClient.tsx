@@ -74,13 +74,13 @@ export default function BlogPostPageClient({ slug }: { slug: string }) {
     "virtual-tours-morocco-real-estate": {
       title: "Create Immersive Virtual Tours",
       description: "Matterport 360° virtual tours that let buyers explore properties remotely. 1,200 MAD per tour.",
-      link: "/pricing/virtual-staging",
+      link: "/pricing/custom",
       linkText: "View Virtual Tour Pricing",
     },
     "stage-property-visual-impact": {
       title: "Stage Your Property Digitally",
       description: "AI-powered virtual staging that transforms empty rooms. Starting at 200 MAD per room.",
-      link: "/pricing/virtual-staging",
+      link: "/pricing/custom",
       linkText: "View Virtual Staging Options",
     },
     "golden-hour-photography-timing": {

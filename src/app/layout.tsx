@@ -61,24 +61,6 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "ShootYourListing",
-              url: "https://www.shootyourlisting.com",
-              potentialAction: {
-                "@type": "SearchAction",
-                target: "https://www.shootyourlisting.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string",
-              },
-            }),
-          }}
-        />
-      </head>
       <body className="min-h-full flex flex-col">
         <a
           href="#main-content"

@@ -285,8 +285,8 @@ export default function BookingForm({ onClose }: { onClose: () => void }) {
 
   const handleSubmit = () => {
     const pkg = PACKAGES.find((p) => p.id === data.package);
-    const msg = `*New Booking Request*%0A%0A*Package:* ${pkg?.name || data.package} (${pkg?.price})%0A*Location:* ${data.location}%0A*Property Size:* ${data.propertySize || "N/A"}%0A*Rooms:* ${data.rooms || "N/A"}%0A%0A*Name:* ${data.name}%0A*Email:* ${data.email}%0A*Phone:* ${data.phone}%0A*Company:* ${data.company || "N/A"}%0A%0A*Date:* ${data.preferredDate}%0A*Time:* ${data.preferredTime || "N/A"}%0A*Notes:* ${data.notes || "None"}`;
-    window.open(`https://wa.me/212621189496?text=${msg}`, "_blank");
+    const msg = `*New Booking Request*%0A%0A*Package:* ${encodeURIComponent(pkg?.name || data.package)} (${encodeURIComponent(pkg?.price || "")})%0A*Location:* ${encodeURIComponent(data.location)}%0A*Property Size:* ${encodeURIComponent(data.propertySize || "N/A")}%0A*Rooms:* ${encodeURIComponent(data.rooms || "N/A")}%0A%0A*Name:* ${encodeURIComponent(data.name)}%0A*Email:* ${encodeURIComponent(data.email)}%0A*Phone:* ${encodeURIComponent(data.phone)}%0A*Company:* ${encodeURIComponent(data.company || "N/A")}%0A%0A*Date:* ${encodeURIComponent(data.preferredDate)}%0A*Time:* ${encodeURIComponent(data.preferredTime || "N/A")}%0A*Notes:* ${encodeURIComponent(data.notes || "None")}`;
+    window.open(`https://wa.me/212621189496?text=${msg}`, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
 

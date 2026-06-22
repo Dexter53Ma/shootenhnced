@@ -58,8 +58,6 @@ const pricingMegaMenu: MegaMenuConfig = {
   ],
 };
 
-const languages = ["EN", "FR"] as const;
-
 function MegaMenu({
   label,
   config,
@@ -384,28 +382,6 @@ export default function Navigation() {
 
           {/* Right Side */}
           <div className="flex items-center gap-3">
-            {/* Language Selector */}
-            <div className="hidden items-center gap-1 md:flex">
-              {languages.map((lang) => (
-                <button
-                  key={lang}
-                  aria-label={`Switch to ${lang === "EN" ? "English" : "French"}`}
-                  className={cn(
-                    "rounded-full px-3 py-1.5 text-[11px] font-medium font-manrope transition-all duration-300",
-                    lang === "EN"
-                      ? scrolled
-                        ? "bg-[var(--dark-teal)] text-white shadow-sm"
-                        : "bg-white/15 text-white backdrop-blur-sm border border-white/20"
-                      : scrolled
-                        ? "text-[#888] hover:bg-gray-100 hover:text-[var(--dark-teal)]"
-                        : "text-white/60 hover:bg-white/15 hover:text-white"
-                  )}
-                >
-                  {lang}
-                </button>
-              ))}
-            </div>
-
             {/* CTA Buttons */}
             <div className="hidden items-center gap-2.5 lg:flex">
               <button
@@ -496,23 +472,6 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-
-              {/* Mobile Language */}
-              <div className="mt-8 flex items-center gap-2">
-                {languages.map((lang) => (
-                  <button
-                    key={lang}
-                    className={cn(
-                      "rounded-full px-4 py-2 text-[12px] font-medium font-manrope transition-all duration-300",
-                      lang === "EN"
-                        ? "bg-[var(--dark-teal)] text-white"
-                        : "text-[#888] hover:bg-gray-100 hover:text-[var(--dark-teal)]"
-                    )}
-                  >
-                    {lang}
-                  </button>
-                ))}
-              </div>
 
               {/* Mobile CTAs */}
               <div className="mt-8 flex flex-col gap-3">
