@@ -275,3 +275,17 @@ html {
 iframe[src*="youtube"] {
   pointer-events: none !important;
 }
+
+/* Hide YouTube overlay UI elements (play button, channel, recommendations) */
+iframe[src*="youtube"] ~ div,
+iframe[src*="youtube"] + div + div {
+  pointer-events: none !important;
+}
+
+/* Force-hide YouTube branding and controls via additional overlay */
+.yt-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}

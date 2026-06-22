@@ -62,8 +62,17 @@ export default function HeroSlider() {
         style={{
           zIndex: 1,
           background:
-            "linear-gradient(148deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.25) 61%, rgba(8,44,56,0.85) 93%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 15%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.4) 85%, rgba(8,44,56,0.95) 100%)",
         }}
+      />
+      {/* Extra opaque bars to hide YouTube top/bottom UI */}
+      <div
+        className="absolute left-0 right-0 top-0 h-16"
+        style={{ zIndex: 1, background: "rgba(0,0,0,0.85)" }}
+      />
+      <div
+        className="absolute bottom-0 left-0 right-0 h-20"
+        style={{ zIndex: 1, background: "rgba(8,44,56,0.95)" }}
       />
 
       <motion.div
